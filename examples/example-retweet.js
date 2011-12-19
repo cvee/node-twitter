@@ -7,17 +7,17 @@ var twitterStreamClient = new Twitter.StreamClient(
     'TOKEN_SECRET'
 );
 
-twitterStreamClient.on('close', function(){
+twitterStreamClient.on('close', function() {
     console.log('Connection closed.');
 });
-twitterStreamClient.on('end', function(){
+twitterStreamClient.on('end', function() {
     console.log('End of Line.');
 });
-twitterStreamClient.on('error', function(error){
-    console.log('Error: ' + error);
+twitterStreamClient.on('error', function(error) {
+    console.log('Error: ' + error.code ? error.code + ' ' + error.message : error.message);
 });
-twitterStreamClient.on('retweet', function(retweet){
+twitterStreamClient.on('retweet', function(retweet) {
     console.log(retweet);
 });
 
-twitterStreamClient.start(['football']);
+twitterStreamClient.start(['baseball', 'basketball', 'football', 'hockey']);
