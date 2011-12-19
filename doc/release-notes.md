@@ -1,5 +1,11 @@
 # node-twitter Release Notes
 
+## Version 0.1.3
+
+*Published on 2012-01-01*
+
+* [FIXED] Error events are now emitted for some common HTTP error codes.
+
 ## Version 0.1.2
 
 *Published on 2011-12-19*
