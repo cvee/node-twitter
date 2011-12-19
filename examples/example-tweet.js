@@ -20,4 +20,4 @@ twitterStreamClient.on('tweet', function(tweet){
     console.log(tweet);
 });
 
-twitterStreamClient.start(['football']);
+twitterStreamClient.start(['baseball', 'basketball', 'football', 'hockey']);
