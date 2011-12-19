@@ -1,5 +1,11 @@
 # node-twitter Release Notes
 
+## Version 0.1.2
+
+*Published on 2011-12-19*
+
+* [FIXED] Issue causing a '401 Unauthorized' error when attempting to track multiple keywords.
+
 ## Version 0.1.1
 
 *Published on 2011-12-06*
