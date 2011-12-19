@@ -4,7 +4,7 @@
 
 *Published on 2012-01-01*
 
-* [FIXED] Error events are now emitted for some common HTTP error codes.
+* [FIXED] Error events are emitted for some common HTTP error codes.
 
 ## Version 0.1.2
 
@@ -23,4 +23,4 @@
 
 *Published on 2011-12-05*
 
-* Initial Release provides support for the [Twitter Streaming API](https://dev.twitter.com/docs/streaming-api).
+* Initial release provides support for the [Twitter Streaming API](https://dev.twitter.com/docs/streaming-api).
