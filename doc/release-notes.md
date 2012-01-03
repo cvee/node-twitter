@@ -2,9 +2,10 @@
 
 ## Version 0.1.3
 
-*Published on 2012-01-01*
+*Published on 2012-01-03*
 
 * [FIXED] Error events are emitted for some common HTTP error codes.
+* [FIXED] [Issue #2 SyntaxError: unexpected end of input](https://github.com/iStrategyLabs/node-twitter/issues/2)
 
 ## Version 0.1.2
 
