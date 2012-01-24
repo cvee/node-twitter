@@ -14,7 +14,7 @@ twitterStreamClient.on('end', function() {
     console.log('End of Line.');
 });
 twitterStreamClient.on('error', function(error) {
-    console.log('Error: ' + error.code ? error.code + ' ' + error.message : error.message);
+    console.log('Error: ' + (error.code ? error.code + ' ' + error.message : error.message));
 });
 twitterStreamClient.on('deleteLocation', function(data) {
     console.log(data);
