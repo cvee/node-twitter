@@ -2,7 +2,7 @@
 
 ## Version 0.2.0
 
-*Published on 2012-02-01*
+*Published on 2012-01-24*
 
 * [FEATURE] Provides initial support for the [Twitter REST API](https://dev.twitter.com/docs/api).
 
