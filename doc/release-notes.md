@@ -4,7 +4,7 @@
 
 *Published on 2012-02-01*
 
-* [FEATURE] Provides limited support for the [Twitter REST API](https://dev.twitter.com/docs/api).
+* [FEATURE] Provides initial support for the [Twitter REST API](https://dev.twitter.com/docs/api).
 
 
 ## Version 0.1.3
