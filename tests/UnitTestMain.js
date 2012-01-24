@@ -10,6 +10,6 @@ var oAuthCredentials = {
 var restClientTestCase = new RestClientTestCase(oAuthCredentials);
 restClientTestCase.setUp();
 restClientTestCase.testCreate();
-restClientTestCase.testHomeTimeline();
-restClientTestCase.testMentions();
+restClientTestCase.testStatusesHomeTimeline();
+restClientTestCase.testStatusesMentions();
 restClientTestCase.tearDown();

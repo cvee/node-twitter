@@ -11,7 +11,7 @@ var RestClientTestCase = function(oAuthCredentials)
 {
     Object.call(this);
 
-    this._oAuthCredentials = null;
+    this._oAuthCredentials = oAuthCredentials;
     this._twitterRestClient = null;
 };
 
@@ -43,17 +43,17 @@ RestClientTestCase.prototype.testValidators = function()
     
 };
 
-RestClientTestCase.prototype.testHomeTimeline = function()
+RestClientTestCase.prototype.testStatusesHomeTimeline = function()
 {
-    this._twitterRestClient.getHomeTimeline({}, function(error, result) {
+    this._twitterRestClient.statusesHomeTimeline({}, function(error, result) {
         assert.ifError(error);
         assert.deepEqual(typeof(result), 'object');
     });
 };
 
-RestClientTestCase.prototype.testMentions = function()
+RestClientTestCase.prototype.testStatusesMentions = function()
 {
-    this._twitterRestClient.getMentions({}, function(error, result) {
+    this._twitterRestClient.statusesMentions({}, function(error, result) {
         assert.ifError(error);
         assert.deepEqual(typeof(result), 'object');
     });
