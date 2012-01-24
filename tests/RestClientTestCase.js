@@ -59,4 +59,60 @@ RestClientTestCase.prototype.testStatusesMentions = function()
     });
 };
 
+RestClientTestCase.prototype.testStatusesPublicTimeline = function()
+{
+    this._twitterRestClient.statusesPublicTimeline({}, function(error, result) {
+        assert.ifError(error);
+        assert.deepEqual(typeof(result), 'object');
+    });
+};
+
+RestClientTestCase.prototype.testStatusesRetweetedByMe = function()
+{
+    this._twitterRestClient.statusesRetweetedByMe({}, function(error, result) {
+        assert.ifError(error);
+        assert.deepEqual(typeof(result), 'object');
+    });
+};
+
+RestClientTestCase.prototype.testStatusesRetweetedByUser = function()
+{
+    this._twitterRestClient.statusesRetweetedByUser({}, function(error, result) {
+        assert.ifError(error);
+        assert.deepEqual(typeof(result), 'object');
+    });
+};
+
+RestClientTestCase.prototype.testStatusesRetweetedToMe = function()
+{
+    this._twitterRestClient.statusesRetweetedToMe({}, function(error, result) {
+        assert.ifError(error);
+        assert.deepEqual(typeof(result), 'object');
+    });
+};
+
+RestClientTestCase.prototype.teststatusesRetweetedToUser = function()
+{
+    this._twitterRestClient.statusesRetweetedToUser({}, function(error, result) {
+        assert.ifError(error);
+        assert.deepEqual(typeof(result), 'object');
+    });
+};
+
+RestClientTestCase.prototype.testStatusesRetweetsOfMe = function()
+{
+    this._twitterRestClient.statusesRetweetsOfMe({}, function(error, result) {
+        assert.ifError(error);
+        assert.deepEqual(typeof(result), 'object');
+    });
+};
+
+RestClientTestCase.prototype.testStatusesUserTimeline = function()
+{
+    this._twitterRestClient.statusesUserTimeline({}, function(error, result) {
+        assert.ifError(error);
+        assert.deepEqual(typeof(result), 'object');
+    });
+};
+
 module.exports = RestClientTestCase;
