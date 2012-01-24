@@ -77,7 +77,7 @@ RestClientTestCase.prototype.testStatusesRetweetedByMe = function()
 
 RestClientTestCase.prototype.testStatusesRetweetedByUser = function()
 {
-    this._twitterRestClient.statusesRetweetedByUser({}, function(error, result) {
+    this._twitterRestClient.statusesRetweetedByUser({screen_name: 'cvee'}, function(error, result) {
         assert.ifError(error);
         assert.deepEqual(typeof(result), 'object');
     });
@@ -93,7 +93,7 @@ RestClientTestCase.prototype.testStatusesRetweetedToMe = function()
 
 RestClientTestCase.prototype.teststatusesRetweetedToUser = function()
 {
-    this._twitterRestClient.statusesRetweetedToUser({}, function(error, result) {
+    this._twitterRestClient.statusesRetweetedToUser({screen_name: 'cvee'}, function(error, result) {
         assert.ifError(error);
         assert.deepEqual(typeof(result), 'object');
     });
@@ -109,7 +109,7 @@ RestClientTestCase.prototype.testStatusesRetweetsOfMe = function()
 
 RestClientTestCase.prototype.testStatusesUserTimeline = function()
 {
-    this._twitterRestClient.statusesUserTimeline({}, function(error, result) {
+    this._twitterRestClient.statusesUserTimeline({screen_name: 'cvee'}, function(error, result) {
         assert.ifError(error);
         assert.deepEqual(typeof(result), 'object');
     });
