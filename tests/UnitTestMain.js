@@ -10,6 +10,7 @@ var oAuthCredentials = {
 var restClientTestCase = new RestClientTestCase(oAuthCredentials);
 restClientTestCase.setUp();
 restClientTestCase.testCreate();
+
 restClientTestCase.testStatusesHomeTimeline();
 restClientTestCase.testStatusesMentions();
 restClientTestCase.testStatusesPublicTimeline();
@@ -19,4 +20,17 @@ restClientTestCase.testStatusesRetweetedToMe();
 restClientTestCase.teststatusesRetweetedToUser();
 restClientTestCase.testStatusesRetweetsOfMe();
 restClientTestCase.testStatusesUserTimeline();
-restClientTestCase.tearDown();
+restClientTestCase.testStatusesRetweetedBy();
+restClientTestCase.testStatusesRetweetedByIds();
+restClientTestCase.testStatusesRetweets();
+restClientTestCase.testStatusesShow();
+restClientTestCase.testStatusesOEmbed();
+
+// Tests create and delete of a tweet.
+restClientTestCase.testStatusesUpdate();
+
+// Tests create and delete of a retweet.
+restClientTestCase.testStatusesRetweet();
+
+// Test create and delete of a tweet containing media.
+restClientTestCase.testStatusesUpdateWithMedia();
