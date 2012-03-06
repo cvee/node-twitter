@@ -202,7 +202,7 @@ RestClientTestCase.prototype.testStatusesUpdateWithMedia = function()
     this._twitterRestClient.statusesUpdateWithMedia(
         {
             'status': 'Unit testing a status update w/ attached media in node-twitter.',
-            'media[]': './flags.jpg'
+            'media[]': path.normalize(__dirname + '/flags.jpg')
         },
         function(error, result) {
             assert.ifError(error);
