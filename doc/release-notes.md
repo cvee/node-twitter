@@ -1,11 +1,25 @@
 # node-twitter Release Notes
 
+## Version 0.3.0
+
+*Published on 2012-03-07*
+
+* [FEATURE] Added support for the following [Twitter REST API](https://dev.twitter.com/docs/api) endpoints:
+  * [GET statuses/:id/retweeted_by](https://dev.twitter.com/docs/api/1/get/statuses/%3Aid/retweeted_by)
+  * [GET statuses/:id/retweeted_by/ids](https://dev.twitter.com/docs/api/1/get/statuses/%3Aid/retweeted_by/ids)
+  * [GET statuses/retweets/:id](https://dev.twitter.com/docs/api/1/get/statuses/retweets/%3Aid)
+  * [GET statuses/show/:id](https://dev.twitter.com/docs/api/1/get/statuses/show/%3Aid)
+  * [POST statuses/destroy/:id](https://dev.twitter.com/docs/api/1/post/statuses/destroy/%3Aid)
+  * [POST statuses/retweet/:id](https://dev.twitter.com/docs/api/1/post/statuses/retweet/%3Aid)
+  * [POST statuses/update](https://dev.twitter.com/docs/api/1/post/statuses/update)
+  * [POST statuses/update_with_media](https://dev.twitter.com/docs/api/1/post/statuses/update_with_media)
+  * [GET statuses/oembed](https://dev.twitter.com/docs/api/1/get/statuses/oembed)
+
 ## Version 0.2.0
 
 *Published on 2012-01-24*
 
 * [FEATURE] Provides initial support for the [Twitter REST API](https://dev.twitter.com/docs/api).
-
 
 ## Version 0.1.3
 
