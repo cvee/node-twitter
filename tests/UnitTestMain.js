@@ -1,4 +1,5 @@
 var RestClientTestCase = require('./RestClientTestCase');
+var SearchClientTestCase = require('./SearchClientTestCase');
 
 var oAuthCredentials = {
     consumerKey: 'CONSUMER_KEY',
@@ -6,6 +7,8 @@ var oAuthCredentials = {
     token: 'TOKEN',
     tokenSecret: 'TOKEN_SECRET'
 };
+
+// REST API
 
 var restClientTestCase = new RestClientTestCase(oAuthCredentials);
 restClientTestCase.setUp();
@@ -98,3 +101,17 @@ setTimeout(function() {
     console.log('RestClient.testStatusesUpdateWithMedia');
     restClientTestCase.testStatusesUpdateWithMedia();
 }, 32000);
+
+// Search API
+
+var searchClientTestCase = new SearchClientTestCase(oAuthCredentials);
+searchClientTestCase.setUp();
+searchClientTestCase.testCreate();
+
+// Test create and delete of a tweet containing media.
+setTimeout(function() {
+    console.log('SearchClient.testSearch');
+    searchClientTestCase.testSearch();
+}, 34000);
+
+
