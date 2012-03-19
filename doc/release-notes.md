@@ -2,7 +2,7 @@
 
 ## Version 0.4.0
 
-*Published on 2012-03-30*
+*Published on 2012-03-19*
 
 * [FEATURE] Added support for the following [Twitter REST API](https://dev.twitter.com/docs/api) endpoints:
   * [GET search](https://dev.twitter.com/docs/api/1/get/search)
