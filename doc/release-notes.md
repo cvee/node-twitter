@@ -1,5 +1,12 @@
 # node-twitter Release Notes
 
+## Version 0.4.0
+
+*Published on 2012-03-19*
+
+* [FEATURE] Added support for the following [Twitter REST API](https://dev.twitter.com/docs/api) endpoints:
+  * [GET search](https://dev.twitter.com/docs/api/1/get/search)
+
 ## Version 0.3.0
 
 *Published on 2012-03-07*
@@ -39,7 +46,6 @@
 *Published on 2011-12-06*
 
 * [FIXED] Firing an 'error' event now provides an error object.
-
 
 ## Version 0.1.0
 
