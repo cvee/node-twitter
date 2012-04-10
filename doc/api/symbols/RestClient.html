@@ -193,6 +193,8 @@ ul.inheritsList
 	
 	<li><a href="../symbols/RestClient.html">RestClient</a></li>
 	
+	<li><a href="../symbols/SearchClient.html">SearchClient</a></li>
+	
 	<li><a href="../symbols/StreamClient.html">StreamClient</a></li>
 	
 </ul>
@@ -263,6 +265,15 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesDestroy">statusesDestroy</a></b>(parameters, callback)
+								</div>
+								<div class="description">Destroys the status specified by the id parameter if it is owned by the authenticated user.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesHomeTimeline">statusesHomeTimeline</a></b>(parameters, callback)
 								</div>
 								<div class="description">Returns the 20 most recent tweets (including retweets), posted by the authenticated user and the user they follow.</div>
@@ -274,7 +285,16 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesMentions">statusesMentions</a></b>(parameters, callback)
 								</div>
-								<div class="description">For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/mentions">Twitter documentation</a>.</div>
+								<div class="description">Retrieves the most recent mentions for the authenticated user.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesOEmbed">statusesOEmbed</a></b>(parameters, callback)
+								</div>
+								<div class="description">Retrieves information needed to embed a status on third party sites.</div>
 							</td>
 						</tr>
 					
@@ -283,7 +303,34 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesPublicTimeline">statusesPublicTimeline</a></b>(parameters, callback)
 								</div>
-								<div class="description">For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/public_timeline">Twitter documenation</a>.</div>
+								<div class="description">Retrieves the most recent statuses, including retweets if they exist, from non-protected users.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweet">statusesRetweet</a></b>(parameters, callback)
+								</div>
+								<div class="description">Retweets the status associated with the specified id parameter.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweetedBy">statusesRetweetedBy</a></b>(parameters, callback)
+								</div>
+								<div class="description">Retrieves the users who retweeted the status associated with the specified id parameter.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweetedByIds">statusesRetweetedByIds</a></b>(parameters, callback)
+								</div>
+								<div class="description">Retrieves the ids of the users who retweeted the status associated with the specified id parameter.</div>
 							</td>
 						</tr>
 					
@@ -292,7 +339,7 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweetedByMe">statusesRetweetedByMe</a></b>(parameters, callback)
 								</div>
-								<div class="description">For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_by_me">Twitter documenation</a>.</div>
+								<div class="description">Retrieves the most recent statuses retweeted by the authenticated user.</div>
 							</td>
 						</tr>
 					
@@ -301,7 +348,7 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweetedByUser">statusesRetweetedByUser</a></b>(parameters, callback)
 								</div>
-								<div class="description">For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_by_user">Twitter documenation</a>.</div>
+								<div class="description">Retrieves the most recent retweets posted by the specified user.</div>
 							</td>
 						</tr>
 					
@@ -310,7 +357,7 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweetedToMe">statusesRetweetedToMe</a></b>(parameters, callback)
 								</div>
-								<div class="description">For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_to_me">Twitter documenation</a>.</div>
+								<div class="description">Retrieves the most recent retweets posted by users the authenticated user follows.</div>
 							</td>
 						</tr>
 					
@@ -319,7 +366,16 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweetedToUser">statusesRetweetedToUser</a></b>(parameters, callback)
 								</div>
-								<div class="description">For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_to_user">Twitter documenation</a>.</div>
+								<div class="description">Retrieves the most recent retweets posted by users the specified user follows.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweets">statusesRetweets</a></b>(parameters, callback)
+								</div>
+								<div class="description">Retrieves the retweets of a given status.</div>
 							</td>
 						</tr>
 					
@@ -328,7 +384,34 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesRetweetsOfMe">statusesRetweetsOfMe</a></b>(parameters, callback)
 								</div>
-								<div class="description">For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweets_of_me">Twitter documenation</a>.</div>
+								<div class="description">Returns recent tweets by the authenticated user that have been retweeted by others.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesShow">statusesShow</a></b>(parameters, callback)
+								</div>
+								<div class="description">Retrieves the status associated with the specified id parameter.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesUpdate">statusesUpdate</a></b>(parameters, callback)
+								</div>
+								<div class="description">Posts a new status for the authenticated user.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/RestClient.html#statusesUpdateWithMedia">statusesUpdateWithMedia</a></b>(parameters, callback)
+								</div>
+								<div class="description">Posts a new status for the authenticated user and attaches media for upload.</div>
 							</td>
 						</tr>
 					
@@ -418,6 +501,50 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
+					<a name="statusesDestroy"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesDestroy</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Destroys the status specified by the id parameter if it is owned by the authenticated user.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/post/statuses/destroy/%3Aid">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
 					<a name="statusesHomeTimeline"> </a>
 					<div class="fixedFont">
 					
@@ -470,7 +597,53 @@ For information on acceptable parameters see the official <a href="https://dev.t
 					
 					</div>
 					<div class="description">
-						For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/mentions">Twitter documentation</a>.
+						Retrieves the most recent mentions for the authenticated user.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/mentions">Twitter documentation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesOEmbed"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesOEmbed</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Retrieves information needed to embed a status on third party sites.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/oembed">Twitter documenation</a>.
 						
 						
 					</div>
@@ -512,7 +685,141 @@ For information on acceptable parameters see the official <a href="https://dev.t
 					
 					</div>
 					<div class="description">
-						For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/public_timeline">Twitter documenation</a>.
+						Retrieves the most recent statuses, including retweets if they exist, from non-protected users.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/public_timeline">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesRetweet"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesRetweet</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Retweets the status associated with the specified id parameter.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/post/statuses/retweet/%3Aid">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesRetweetedBy"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesRetweetedBy</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Retrieves the users who retweeted the status associated with the specified id parameter.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/%3Aid/retweeted_by">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesRetweetedByIds"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesRetweetedByIds</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Retrieves the ids of the users who retweeted the status associated with the specified id parameter.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/%3Aid/retweeted_by/ids">Twitter documenation</a>.
 						
 						
 					</div>
@@ -554,7 +861,9 @@ For information on acceptable parameters see the official <a href="https://dev.t
 					
 					</div>
 					<div class="description">
-						For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_by_me">Twitter documenation</a>.
+						Retrieves the most recent statuses retweeted by the authenticated user.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_by_me">Twitter documenation</a>.
 						
 						
 					</div>
@@ -596,7 +905,9 @@ For information on acceptable parameters see the official <a href="https://dev.t
 					
 					</div>
 					<div class="description">
-						For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_by_user">Twitter documenation</a>.
+						Retrieves the most recent retweets posted by the specified user.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_by_user">Twitter documenation</a>.
 						
 						
 					</div>
@@ -638,7 +949,9 @@ For information on acceptable parameters see the official <a href="https://dev.t
 					
 					</div>
 					<div class="description">
-						For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_to_me">Twitter documenation</a>.
+						Retrieves the most recent retweets posted by users the authenticated user follows.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_to_me">Twitter documenation</a>.
 						
 						
 					</div>
@@ -680,7 +993,54 @@ For information on acceptable parameters see the official <a href="https://dev.t
 					
 					</div>
 					<div class="description">
-						For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_to_user">Twitter documenation</a>.
+						Retrieves the most recent retweets posted by users the specified user follows.
+This method is identical to statusesRetweetedToMe except you can specify the user.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweeted_to_user">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesRetweets"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesRetweets</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Retrieves the retweets of a given status.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweets/%3Aid">Twitter documenation</a>.
 						
 						
 					</div>
@@ -722,7 +1082,148 @@ For information on acceptable parameters see the official <a href="https://dev.t
 					
 					</div>
 					<div class="description">
-						For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweets_of_me">Twitter documenation</a>.
+						Returns recent tweets by the authenticated user that have been retweeted by others.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/retweets_of_me">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesShow"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesShow</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Retrieves the status associated with the specified id parameter.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/get/statuses/show/%3Aid">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesUpdate"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesUpdate</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Posts a new status for the authenticated user.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/post/statuses/update">Twitter documenation</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Dictionary}</span> <b>parameters</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>The callback function.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>This method returns an integer.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="statusesUpdateWithMedia"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>statusesUpdateWithMedia</b>(parameters, callback)
+					
+					</div>
+					<div class="description">
+						Posts a new status for the authenticated user and attaches media for upload.
+
+For information on acceptable parameters see the official <a href="https://dev.twitter.com/docs/api/1/post/statuses/update_with_media">Twitter documenation</a>.
 						
 						
 					</div>
@@ -810,7 +1311,7 @@ For information on acceptable parameters see the official <a href="https://dev.t
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Jan 24 2012 16:00:18 GMT-0500 (EST)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Apr 10 2012 17:01:44 GMT-0400 (EDT)
 		</div>
 	</body>
 </html>
