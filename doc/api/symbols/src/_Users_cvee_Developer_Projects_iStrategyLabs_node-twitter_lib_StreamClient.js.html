@@ -23,8 +23,8 @@
 <span class='line'> 16</span> </span><span class="PUNC">{</span><span class="WHIT">
 <span class='line'> 17</span> </span><span class="WHIT">    </span><span class="NAME">Client.call</span><span class="PUNC">(</span><span class="KEYW">this</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">consumerKey</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">consumerSecret</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">token</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">tokenSecret</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'> 18</span> 
-<span class='line'> 19</span> </span><span class="WHIT">    </span><span class="NAME">this._apiBaseUrlString</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">Constants.StreamAPIBaseURLString</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 20</span> </span><span class="WHIT">    </span><span class="NAME">this._apiVersion</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">Constants.StreamAPIVersion</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 19</span> </span><span class="WHIT">    </span><span class="NAME">this._apiBaseUrlString</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">Constants.StreamApiBaseURLString</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 20</span> </span><span class="WHIT">    </span><span class="NAME">this._apiVersion</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">Constants.StreamApiVersion</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'> 21</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'> 22</span> 
 <span class='line'> 23</span> </span><span class="NAME">Util.inherits</span><span class="PUNC">(</span><span class="NAME">StreamClient</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">Client</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
@@ -52,7 +52,7 @@
 <span class='line'> 45</span>  * Listeners should be attached to the &lt;code>StreamClient&lt;/code> instance in
 <span class='line'> 46</span>  * order to respond to events:
 <span class='line'> 47</span>  *
-<span class='line'> 48</span>  * &lt;code>
+<span class='line'> 48</span>  * &lt;pre>
 <span class='line'> 49</span>  * // Request to remove geolocation information from a status
 <span class='line'> 50</span>  * twitterStreamClient.on('deleteLocation', function(data) {
 <span class='line'> 51</span>  *   console.log(data);
@@ -82,10 +82,10 @@
 <span class='line'> 75</span>  * twitterStreamClient.on('tweet', function(tweet) {
 <span class='line'> 76</span>  *   console.log(tweet);
 <span class='line'> 77</span>  * });
-<span class='line'> 78</span>  * &lt;/code>
+<span class='line'> 78</span>  * &lt;/pre>
 <span class='line'> 79</span>  *
-<span class='line'> 80</span>  * See https://dev.twitter.com/docs/streaming-api/concepts for information on
-<span class='line'> 81</span>  * the structure of the JSON responses returned from the Twitter Streaming API.
+<span class='line'> 80</span>  * See &lt;a href="https://dev.twitter.com/docs/streaming-api/concepts">Twitter Streaming API Concepts&lt;/a>
+<span class='line'> 81</span>  * for information on the structure of the JSON responses returned from the Twitter Streaming API.
 <span class='line'> 82</span>  *
 <span class='line'> 83</span>  * @this {StreamClient}
 <span class='line'> 84</span>  * @param {Array} keywords A set of keywords to track.
@@ -167,7 +167,7 @@
 <span class='line'>160</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>161</span> 
 <span class='line'>162</span> </span><span class="COMM">/**
-<span class='line'>163</span>  *
+<span class='line'>163</span>  * Handles the ending of a request.
 <span class='line'>164</span>  *
 <span class='line'>165</span>  * @private
 <span class='line'>166</span>  * @this {StreamClient}
@@ -181,7 +181,7 @@
 <span class='line'>174</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>175</span> 
 <span class='line'>176</span> </span><span class="COMM">/**
-<span class='line'>177</span>  *
+<span class='line'>177</span>  * Handles the closing of a request.
 <span class='line'>178</span>  *
 <span class='line'>179</span>  * @private
 <span class='line'>180</span>  * @this {StreamClient}
@@ -195,12 +195,12 @@
 <span class='line'>188</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>189</span> 
 <span class='line'>190</span> </span><span class="COMM">/**
-<span class='line'>191</span>  *
+<span class='line'>191</span>  * Handles the failure of a request.
 <span class='line'>192</span>  *
 <span class='line'>193</span>  * @private
 <span class='line'>194</span>  * @this {StreamClient}
 <span class='line'>195</span>  * @param {http.ClientRequest} aRequest The request object.
-<span class='line'>196</span>  * @param {Error} aError
+<span class='line'>196</span>  * @param {Error} aError An Error object.
 <span class='line'>197</span>  */</span><span class="WHIT">
 <span class='line'>198</span> </span><span class="NAME">StreamClient.prototype._requestDidFailWithError</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="PUNC">(</span><span class="NAME">aRequest</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">aError</span><span class="PUNC">)</span><span class="WHIT">
 <span class='line'>199</span> </span><span class="PUNC">{</span><span class="WHIT">
@@ -225,10 +225,10 @@
 <span class='line'>218</span> </span><span class="WHIT">    </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="NAME">aData.toString</span><span class="PUNC">(</span><span class="STRN">'utf8'</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>219</span> 
 <span class='line'>220</span> </span><span class="WHIT">    </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="PUNC">-</span><span class="NUMB">1</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'>221</span> </span><span class="WHIT">    </span><span class="KEYW">while</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="PUNC">(</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="PUNC">.</span><span class="NAME">indexOf</span><span class="PUNC">(</span><span class="NAME">Constants.StreamAPIObjectTerminator</span><span class="PUNC">)</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">!==</span><span class="WHIT"> </span><span class="PUNC">-</span><span class="NUMB">1</span><span class="PUNC">)</span><span class="WHIT">
+<span class='line'>221</span> </span><span class="WHIT">    </span><span class="KEYW">while</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="PUNC">(</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="PUNC">.</span><span class="NAME">indexOf</span><span class="PUNC">(</span><span class="NAME">Constants.StreamApiObjectTerminator</span><span class="PUNC">)</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">!==</span><span class="WHIT"> </span><span class="PUNC">-</span><span class="NUMB">1</span><span class="PUNC">)</span><span class="WHIT">
 <span class='line'>222</span> </span><span class="WHIT">    </span><span class="PUNC">{</span><span class="WHIT">
 <span class='line'>223</span> </span><span class="WHIT">        </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">jsonString</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="PUNC">.</span><span class="NAME">slice</span><span class="PUNC">(</span><span class="NUMB">0</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">index</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'>224</span> </span><span class="WHIT">        </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="PUNC">.</span><span class="NAME">slice</span><span class="PUNC">(</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="NAME">Constants.StreamAPIObjectTerminator.length</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'>224</span> </span><span class="WHIT">        </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">connection</span><span class="PUNC">[</span><span class="STRN">'data'</span><span class="PUNC">]</span><span class="PUNC">.</span><span class="NAME">slice</span><span class="PUNC">(</span><span class="NAME">index</span><span class="WHIT"> </span><span class="PUNC">+</span><span class="WHIT"> </span><span class="NAME">Constants.StreamApiObjectTerminator.length</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>225</span> </span><span class="WHIT">        </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">object</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">JSON.parse</span><span class="PUNC">(</span><span class="NAME">jsonString</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>226</span> 
 <span class='line'>227</span> </span><span class="WHIT">        </span><span class="KEYW">if</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="NAME">object.delete</span><span class="WHIT"> </span><span class="PUNC">!==</span><span class="WHIT"> </span><span class="NAME">undefined</span><span class="PUNC">)</span><span class="WHIT">
