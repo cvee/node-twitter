@@ -167,7 +167,7 @@
 <span class='line'>160</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>161</span> 
 <span class='line'>162</span> </span><span class="COMM">/**
-<span class='line'>163</span>  *
+<span class='line'>163</span>  * Handles the ending of a request.
 <span class='line'>164</span>  *
 <span class='line'>165</span>  * @private
 <span class='line'>166</span>  * @this {StreamClient}
@@ -181,7 +181,7 @@
 <span class='line'>174</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>175</span> 
 <span class='line'>176</span> </span><span class="COMM">/**
-<span class='line'>177</span>  *
+<span class='line'>177</span>  * Handles the closing of a request.
 <span class='line'>178</span>  *
 <span class='line'>179</span>  * @private
 <span class='line'>180</span>  * @this {StreamClient}
@@ -195,12 +195,12 @@
 <span class='line'>188</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>189</span> 
 <span class='line'>190</span> </span><span class="COMM">/**
-<span class='line'>191</span>  *
+<span class='line'>191</span>  * Handles the failure of a request.
 <span class='line'>192</span>  *
 <span class='line'>193</span>  * @private
 <span class='line'>194</span>  * @this {StreamClient}
 <span class='line'>195</span>  * @param {http.ClientRequest} aRequest The request object.
-<span class='line'>196</span>  * @param {Error} aError
+<span class='line'>196</span>  * @param {Error} aError An Error object.
 <span class='line'>197</span>  */</span><span class="WHIT">
 <span class='line'>198</span> </span><span class="NAME">StreamClient.prototype._requestDidFailWithError</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="PUNC">(</span><span class="NAME">aRequest</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">aError</span><span class="PUNC">)</span><span class="WHIT">
 <span class='line'>199</span> </span><span class="PUNC">{</span><span class="WHIT">
