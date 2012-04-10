@@ -1,5 +1,11 @@
 # node-twitter Release Notes
 
+## Version 0.4.3
+
+*Published on 2012-04-06*
+
+* [FIXED] Corrected version in package.json
+
 ## Version 0.4.2
 
 *Published on 2012-04-06*
