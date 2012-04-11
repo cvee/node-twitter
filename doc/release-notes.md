@@ -1,14 +1,20 @@
 # node-twitter Release Notes
 
+## Version 0.4.4
+
+*Published on 2012-04-10*
+
+* [FIXED] Issue preventing disconnection from the Twitter stream after StreamClient.stop() has been called.
+
 ## Version 0.4.3
 
-*Published on 2012-04-06*
+*Published on 2012-04-10*
 
 * [FIXED] Corrected version in package.json
 
 ## Version 0.4.2
 
-*Published on 2012-04-06*
+*Published on 2012-04-10*
 
 * [FIXED] Updated API documentation.
 
