@@ -2,7 +2,7 @@
 
 ## Version 0.4.4
 
-*Published on 2012-04-11*
+*Published on 2012-04-10*
 
 * [FIXED] Issue preventing disconnection from the Twitter stream after StreamClient.stop() has been called.
 
